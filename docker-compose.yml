@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: docker-admin-c
+    image: docker-admin-i
+    build:
+      context: .
+    ports:
+     - 8080:80
